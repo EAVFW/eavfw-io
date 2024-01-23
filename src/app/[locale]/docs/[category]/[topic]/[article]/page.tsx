@@ -1,5 +1,5 @@
 import { getArticlesAsync, getCategoriesAsync } from "@/eav"
-import { getArticleAsync } from "../../../../../eav/getArticleAsync";
+import { getArticleAsync } from "@/eav/getArticleAsync";
 import { Suspense } from "react";
 import { MDXRemote } from 'next-mdx-remote/rsc'
 

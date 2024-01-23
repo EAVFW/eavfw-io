@@ -18,9 +18,9 @@
     "next": "14.1.0",
     "@stylexjs/stylex": "0.4.1",
     "@supercharge/strings": "2.0.0",
-    "yaml-front-matter": "4.1.1"
-    
-    
+    "yaml-front-matter": "4.1.1",
+
+    "next-international": "1.2.3"
   },
   "devDependencies": {
     "env-cmd": "10.1.0",

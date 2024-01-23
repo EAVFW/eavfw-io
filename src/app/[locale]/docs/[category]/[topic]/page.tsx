@@ -1,5 +1,5 @@
 import { getCategoriesAsync } from "@/eav"
-import { getTopicsAsync } from "../../../../eav/getTopicsAsync";
+import { getTopicsAsync } from "@/eav/getTopicsAsync";
 import { getArticlesAsync } from "@/eav/getArticlesAsync";
 import { docsStyle } from "../../docs.stylex";
 import stylex from "@stylexjs/stylex";

@@ -2,7 +2,7 @@ import { getCategoriesAsync } from "@/eav"
 import stylex from "@stylexjs/stylex";
 import { docsStyle } from "../docs.stylex";
 import Link from "next/link";
-import { getTopicsAsync } from "../../../eav/getTopicsAsync";
+import { getTopicsAsync } from "@/eav/getTopicsAsync";
 
 
 export default async function CategoryPage({ params }: { params: { category: string } }) {
