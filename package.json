@@ -16,7 +16,11 @@
     "react": "^18",
     "react-dom": "^18",
     "next": "14.1.0",
-    "@stylexjs/stylex": "0.4.1"
+    "@stylexjs/stylex": "0.4.1",
+    "@supercharge/strings": "2.0.0",
+    "yaml-front-matter": "4.1.1"
+    
+    
   },
   "devDependencies": {
     "env-cmd": "10.1.0",
@@ -24,6 +28,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/yaml-front-matter": "4.1.3",
 
     "strip-json-comments": "5.0.1",
     "rimraf": "^5.0.5",
@@ -33,6 +38,13 @@
     "@stylexjs/nextjs-plugin": "^0.4.1",
     "@babel/runtime": "7.23.8",
     "@ionic/react": "7.6.3",
-    "ionicons": "7.2.2"
+    "ionicons": "7.2.2",
+
+
+    "@next/mdx": "14.0.4",
+    "@mdx-js/loader": "3.0.0",
+    "@mdx-js/react": "3.0.0",
+    "@types/mdx": "2.0.10",
+    "next-mdx-remote": "4.4.1"
   }
 }
