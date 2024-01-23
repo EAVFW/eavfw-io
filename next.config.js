@@ -147,7 +147,7 @@ module.exports = applylast(stylexPlugin({
     staticPageGenerationTimeout: 300,
     trailingSlash: true,
     reactStrictMode: false,
-     
+    
     experimental: {
 
     },
