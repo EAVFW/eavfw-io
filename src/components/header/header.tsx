@@ -47,7 +47,7 @@ export const Header = () => {
                                 <label className="text-normal width-full">
                                     <span className="visually-hidden" aria-describedby="Enter a search term to find it in the EAVFW Docs.">Search EAVFW Docs</span>
                                     <span className="TextInputWrapper__TextInputBaseWrapper-sc-1mqhpbi-0 TextInputWrapper-sc-1mqhpbi-1 bwNwji erLEIl TextInput-wrapper" aria-busy="false">
-                                        <input type="search" required data-testid="site-search-input" placeholder="Search EAVFW Docs" autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck="false" maxLength={512} aria-label="Search EAVFW Docs" aria-describedby="Enter a search term to find it in the EAVFW Docs." data-component="input" className="UnstyledTextInput-sc-14ypya-0 jvumlb" value="" />
+                                        <input type="search" required data-testid="site-search-input" placeholder="Search EAVFW Docs" autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck="false" maxLength={512} aria-label="Search EAVFW Docs" aria-describedby="Enter a search term to find it in the EAVFW Docs." data-component="input" className="UnstyledTextInput-sc-14ypya-0 jvumlb" defaultValue="" />
                                     </span>
                                 </label>
                                 <button data-component="IconButton" type="submit" aria-label="Search" data-no-visuals="true" className="types__StyledButton-sc-ws60qy-0 ctzMFf">
