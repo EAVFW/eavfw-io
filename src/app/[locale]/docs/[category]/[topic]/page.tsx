@@ -4,20 +4,21 @@ import { getArticlesAsync } from "@/eav/getArticlesAsync";
 import { docsStyle } from "../../docs.stylex";
 import stylex from "@stylexjs/stylex";
 import Link from "next/link";
+import { getCurrentLocale } from "../../../../../locales/server";
 
 
 
 
 
 export default async function TopicPage({ params }: { params: { category: string, topic: string } }) {
-
+    const locale = getCurrentLocale();
     console.log(params);
     const articles = await getArticlesAsync(params.category, params.topic);
 
     return <div {...stylex.props(docsStyle.welcome)}>
         <div>{JSON.stringify(params)}</div>
         <ul>
-            {articles.map(cat => <li key={cat.article}><Link href={`/docs/${params.category}/${params.topic}/${cat.article}`}>{cat.article}</Link></li>)}
+            {articles.map(cat => <li key={cat.article}><Link href={`/${locale}/docs/${params.category}/${params.topic}/${cat.article}`}>{cat.article}</Link></li>)}
         </ul>
     </div>
 
