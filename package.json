@@ -19,7 +19,7 @@
     "@stylexjs/stylex": "0.4.1",
     "@supercharge/strings": "2.0.0",
     "yaml-front-matter": "4.1.1",
-
+    "@eavfw/stylex-bootstrap": "1.0.1",
     "next-international": "1.2.3"
   },
   "devDependencies": {

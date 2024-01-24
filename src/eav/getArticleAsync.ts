@@ -17,7 +17,7 @@ export async function getArticleAsync(categoryid: string, topicid: string, artic
     const article = articles.find(x => x.article === articleid)!;
     const contentBuffer = await fs.readFile(article.path);
     const content = new TextDecoder('utf-8', { ignoreBOM: false }).decode(contentBuffer);
-    console.log(content);
+   
     let parsed = loadFront(content) as Post;
 
 
