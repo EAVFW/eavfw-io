@@ -2,6 +2,11 @@ import path from "path";
 import { cwd } from "process";
 import fs from "fs/promises";
 
+export async function getCategoryAsync(id: string) {
+    const categories = await getCategoriesAsync();
+
+    return categories.find(x => x.category === id)!;
+}
 export async function getCategoriesAsync() {
 
     const folder = path.resolve(cwd(), `./docs`);

@@ -3,12 +3,13 @@ import stylex from "@stylexjs/stylex";
 import { docsStyle } from "../docs.stylex";
 import Link from "next/link";
 import { getTopicsAsync } from "@/eav/getTopicsAsync";
-import { getCurrentLocale } from "../../../../locales/server";
+import { getCurrentLocale, setStaticParamsLocale } from "../../../../locales/server";
 
 
 export default async function CategoryPage({ params }: { params: { category: string, locale: string } }) {
 
    
+
     const topics = await getTopicsAsync(params.category);
 
     return <div {...stylex.props(docsStyle.welcome)}>
