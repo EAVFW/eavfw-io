@@ -2,6 +2,7 @@ import { getCategoriesAsync, getCategoryAsync } from "@/eav";
 import { setStaticParamsLocale } from "@/locales/server";
 import { DocsNavHeader } from "@/components/nav/DocsNavHeader.server";
 import { DocsNavTopics } from "@/components/nav/DocsNavTopic.server";
+import { DocsNav } from "../../../../components/nav/DocsNav.server";
 
 
 
@@ -21,21 +22,12 @@ export default async function CategoryLayout({ children, params }: Readonly<{
 
     setStaticParamsLocale(params.locale);
 
-    const category = await getCategoryAsync(params.category);
+   
 
 
 
     return (<div className="d-lg-flex">
-        <div data-container="nav" className="position-sticky d-none border-right d-xxl-block" style={{ width: '326px', height: 'calc(100vh - 65px)', top: '65px' }} >
-            <nav aria-labelledby="allproducts-menu">
-
-                <DocsNavHeader backLinkTitle="Home" title={category.category} />
-
-                <DocsNavTopics categoryId={params.category} />
-
-
-            </nav>
-        </div>
+        <DocsNav categoryid={params.category} />
         <div className="flex-column flex-1 min-width-0">
             {children}
         </div>
