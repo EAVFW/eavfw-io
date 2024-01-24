@@ -6,14 +6,15 @@ import { getTopicsAsync } from "@/eav/getTopicsAsync";
 import { getCurrentLocale } from "../../../../locales/server";
 
 
-export default async function CategoryPage({ params }: { params: { category: string } }) {
-    const locale = getCurrentLocale();
+export default async function CategoryPage({ params }: { params: { category: string, locale: string } }) {
+
+   
     const topics = await getTopicsAsync(params.category);
 
     return <div {...stylex.props(docsStyle.welcome)}>
         <div>{JSON.stringify(params)}</div>
         <ul>
-            {topics.map(cat => <li key={cat.topic}><Link href={`/${locale}/docs/${params.category}/${cat.topic}`}>{cat.topic}</Link></li>)}
+            {topics.map(cat => <li key={cat.topic}><Link href={`/${params.locale}/docs/${params.category}/${cat.topic}`}>{cat.topic}</Link></li>)}
         </ul>
     </div>
 }

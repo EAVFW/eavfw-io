@@ -6,7 +6,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 export default async function ArticlePage({ params }: { params: { category: string, topic: string, article: string } }) {
 
     const markdown = await getArticleAsync(params.category, params.topic, params.article);
-    console.log(markdown);
+   // console.log(markdown);
     return (
         <Suspense fallback={<>Loading...</>}>
             <MDXRemote source={markdown.__content} />
